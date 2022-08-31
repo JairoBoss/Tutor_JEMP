@@ -6,13 +6,36 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Perfil - Tutorial Jairo</title>
+<title>Perfil - Tutorial Jairo nuevo</title>
 <jsp:include page="/componentes/bootstrap.jsp" />
 <link rel="stylesheet" type="text/css"
 	href="<%=request.getContextPath()%>/css/bootstrap-5.0.2/dashboard.css" />
 
 <link rel="stylesheet" type="text/css"
 	href="<%=request.getContextPath()%>/css/bootstrap-5.0.2/dashboard.rtl.css" />
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link
+	href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/assets/css/bootstrap.css">
+
+<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/assets/css/widgets/chat.css">
+
+<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/assets/vendors/bootstrap-icons/bootstrap-icons.css">
+<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/assets/css/app.css">
+<link rel="shortcut icon"
+	href="<%=request.getContextPath()%>/assets/images/favicon.svg"
+	type="image/x-icon">
+
 </head>
 <body>
 	<%
@@ -32,152 +55,89 @@
 				<jsp:param name="menuActivo" value="dashboard" />
 			</jsp:include>
 			<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-				<div
-					class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-					<h1 class="h2">Dashboard</h1>
-					<div class="btn-toolbar mb-2 mb-md-0">
-						<div class="btn-group me-2">
-							<button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-							<button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+
+
+
+
+				
+
+				<br /><br />
+				<section id="basic-vertical-layouts">
+				<div class="card-header">
+					<h4 class="card-title">Nuevos mensajes</h4>
+				</div>
+					<div class="col-md1 col-12">
+						<div class="row">
+							<div class="col-md1">
+								<div class="card">
+									<div class="card-header">
+										<div class="media d-flex align-items-center">
+											<div class="avatar me-3">
+												<img
+													src="<%=request.getContextPath()%>/assets/images/faces/1.jpg"
+													alt="" srcset=""> <span
+													class="avatar-status bg-success"></span>
+											</div>
+											<div class="name flex-grow-1">
+												<h6 class="mb-0">Jairo</h6>
+												<span class="text-xs">Online</span>
+											</div>
+											<button class="btn btn-sm">
+												<i data-feather="x"></i>
+											</button>
+										</div>
+									</div>
+									<div class="card-body pt-4 bg-grey">
+										<div class="chat-content">
+											<div class="chat">
+												<div class="chat-body">
+													<div class="chat-message">Hola Jairo, Como te puedo ayudar?</div>
+												</div>
+											</div>
+											<div class="chat chat-left">
+												<div class="chat-body">
+													<div class="chat-message">Hola!, estoy buscando una nueva plantilla para un proyecto</div>
+													<div class="chat-message">De preferencia que use styled-components </div>
+												</div>
+											</div>
+											<div class="chat">
+												<div class="chat-body">
+													<div class="chat-message">De momento te puedo recomendar usar </div>
+													<div class="chat-message"><a href="https://tokyo.bloomui.com/">Tokyo React Typescript Admin Dashboard</a></div>
+												</div>
+											</div>
+											<div class="chat chat-left">
+												<div class="chat-body">
+													<div class="chat-message">Ok gracias, creo que me puede servir :)</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-footer">
+										<div
+											class="message-form d-flex flex-direction-column align-items-center">
+											<a href="http://" class="black"><i data-feather="smile"></i></a>
+											<div class="d-flex flex-grow-1 ml-4">
+												<input type="text" class="form-control"
+													placeholder="Type your message..">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<button type="button"
-							class="btn btn-sm btn-outline-secondary dropdown-toggle">
-							<span data-feather="calendar" class="align-text-bottom"></span>
-							This week
-						</button>
 					</div>
-				</div>
+				</section>
 
-				<canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
 
-				<h2>Section title</h2>
-				<div class="table-responsive">
-					<table class="table table-striped table-sm">
-						<thead>
-							<tr>
-								<th scope="col">#</th>
-								<th scope="col">Header</th>
-								<th scope="col">Header</th>
-								<th scope="col">Header</th>
-								<th scope="col">Header</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1,001</td>
-								<td>random</td>
-								<td>data</td>
-								<td>placeholder</td>
-								<td>text</td>
-							</tr>
-							<tr>
-								<td>1,002</td>
-								<td>placeholder</td>
-								<td>irrelevant</td>
-								<td>visual</td>
-								<td>layout</td>
-							</tr>
-							<tr>
-								<td>1,003</td>
-								<td>data</td>
-								<td>rich</td>
-								<td>dashboard</td>
-								<td>tabular</td>
-							</tr>
-							<tr>
-								<td>1,003</td>
-								<td>information</td>
-								<td>placeholder</td>
-								<td>illustrative</td>
-								<td>data</td>
-							</tr>
-							<tr>
-								<td>1,004</td>
-								<td>text</td>
-								<td>random</td>
-								<td>layout</td>
-								<td>dashboard</td>
-							</tr>
-							<tr>
-								<td>1,005</td>
-								<td>dashboard</td>
-								<td>irrelevant</td>
-								<td>text</td>
-								<td>placeholder</td>
-							</tr>
-							<tr>
-								<td>1,006</td>
-								<td>dashboard</td>
-								<td>illustrative</td>
-								<td>rich</td>
-								<td>data</td>
-							</tr>
-							<tr>
-								<td>1,007</td>
-								<td>placeholder</td>
-								<td>tabular</td>
-								<td>information</td>
-								<td>irrelevant</td>
-							</tr>
-							<tr>
-								<td>1,008</td>
-								<td>random</td>
-								<td>data</td>
-								<td>placeholder</td>
-								<td>text</td>
-							</tr>
-							<tr>
-								<td>1,009</td>
-								<td>placeholder</td>
-								<td>irrelevant</td>
-								<td>visual</td>
-								<td>layout</td>
-							</tr>
-							<tr>
-								<td>1,010</td>
-								<td>data</td>
-								<td>rich</td>
-								<td>dashboard</td>
-								<td>tabular</td>
-							</tr>
-							<tr>
-								<td>1,011</td>
-								<td>information</td>
-								<td>placeholder</td>
-								<td>illustrative</td>
-								<td>data</td>
-							</tr>
-							<tr>
-								<td>1,012</td>
-								<td>text</td>
-								<td>placeholder</td>
-								<td>layout</td>
-								<td>dashboard</td>
-							</tr>
-							<tr>
-								<td>1,013</td>
-								<td>dashboard</td>
-								<td>irrelevant</td>
-								<td>text</td>
-								<td>visual</td>
-							</tr>
-							<tr>
-								<td>1,014</td>
-								<td>dashboard</td>
-								<td>illustrative</td>
-								<td>rich</td>
-								<td>data</td>
-							</tr>
-							<tr>
-								<td>1,015</td>
-								<td>random</td>
-								<td>tabular</td>
-								<td>information</td>
-								<td>text</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
+
+
+
+
+
+
+
+
 			</main>
 		</div>
 	</div>

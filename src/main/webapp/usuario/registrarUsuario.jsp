@@ -14,6 +14,20 @@
 
 <link rel="stylesheet" type="text/css"
 	href="<%=request.getContextPath()%>/css/bootstrap-5.0.2/dashboard.rtl.css" />
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link
+	href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/assets/css/bootstrap.css">
+
+<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/assets/vendors/bootstrap-icons/bootstrap-icons.css">
+<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/assets/css/app.css">
 </head>
 <body>
 
@@ -35,87 +49,136 @@
 				<jsp:param name="menuActivo" value="usuario" />
 			</jsp:include>
 			<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-				<div
-					class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-					<h1 class="h2">Registrar usuario</h1>
-					<h1><%=(String) request.getAttribute("mensaje") %></h1>
-				</div>
-				<form method="post"
-					action="<%=request.getContextPath()%>/Usuario/registrarUsuarioPersona">
-					<div class="row">
-						<div class="col-10">
-							<div class="mb-3 row">
-								<label for="correo" class="col-sm-2 col-form-label">correo</label>
-								<div class="col-sm-10">
-									<input type="email" name="correo" class="form-control"
-										id="correo">
-								</div>
+				<br />
+				<section id="basic-vertical-layouts">
+					<div class="col-md1 col-12">
+						<div class="card">
+							<div class="card-header">
+								<h4 class="card-title">Registrar un nuevo usuario</h4>
 							</div>
-							<div class="mb-3 row">
-								<label for="password" class="col-sm-2 col-form-label">Contrase&ntilde;a</label>
-								<div class="col-sm-10">
-									<input type="password" class="form-control" name="password"
-										id="password">
-								</div>
-							</div>
-							<div class="mb-3 row">
-								<label for="status" class="col-sm-2 col-form-label">Status</label>
-								<div class="col-sm-10">
-									<input type="checkbox" name="status" id="status">
-								</div>
-							</div>
-							<hr />
+							<div class="card-content">
+								<div class="card-body">
+									<form class="form form-vertical" method="post"
+										action="<%=request.getContextPath()%>/Usuario/registrarUsuarioPersona">
+										<div class="form-body">
+											<div class="row">
+												<div class="col-12">
+													<div class="form-group has-icon-left">
+														<label for="first-name-icon">Nombre(s)</label>
+														<div class="position-relative">
+															<input type="text" class="form-control"
+																placeholder="Coloca tu nombre" id="nombre">
+															<div class="form-control-icon">
+																<i class="bi bi-person"></i>
+															</div>
+														</div>
+													</div>
+												</div>
 
-							<div class="mb-3 row">
-								<label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
-								<div class="col-sm-10">
-									<input type="text" name="nombre" class="form-control"
-										id="nombre">
-								</div>
-							</div>
 
-							<div class="mb-3 row">
-								<label for="paterno" class="col-sm-2 col-form-label">Paterno</label>
-								<div class="col-sm-10">
-									<input type="text" name="paterno" class="form-control"
-										id="paterno">
-								</div>
-							</div>
 
-							<div class="mb-3 row">
-								<label for="materno" class="col-sm-2 col-form-label">Materno</label>
-								<div class="col-sm-10">
-									<input type="text" name="materno" class="form-control"
-										id="materno">
-								</div>
-							</div>
 
-							<div class="mb-3 row">
-								<label for="edad" class="col-sm-2 col-form-label">Edad</label>
-								<div class="col-sm-10">
-									<input type="number" min="18" max="100" name="edad"
-										class="form-control" id="edad">
-								</div>
-							</div>
+												<div class="col-12">
+													<div class="form-group has-icon-left">
+														<label for="first-name-icon">Paterno</label>
+														<div class="position-relative">
+															<input type="text" class="form-control"
+																placeholder="Coloca tu apellido" id="paterno">
+															<div class="form-control-icon">
+																<i class="bi bi-person"></i>
+															</div>
+														</div>
+													</div>
+												</div>
 
-							<div class="mb-3 row">
-								<label for="telefono" class="col-sm-2 col-form-label">Telefono</label>
-								<div class="col-sm-10">
-									<input type="tel" name="telefono" class="form-control"
-										id="telefono">
-								</div>
-							</div>
+												<div class="col-12">
+													<div class="form-group has-icon-left">
+														<label for="first-name-icon">Materno</label>
+														<div class="position-relative">
+															<input type="text" class="form-control"
+																placeholder="Coloca tu apellido" id="materno">
+															<div class="form-control-icon">
+																<i class="bi bi-person"></i>
+															</div>
+														</div>
+													</div>
+												</div>
 
-							<div class="mb-3 row">
 
-								<div class="col-sm-2">
-									<input type="submit" name="status" class="btn btn-success"
-										value="Crear">
+												<div class="col-12">
+													<div class="form-group has-icon-left">
+														<label for="first-name-icon">Edad</label>
+														<div class="position-relative">
+															<input class="form-control" placeholder="Coloca tu edad"
+																type="number" min="18" max="100" name="edad">
+															<div class="form-control-icon">
+																<i class="bi bi-person"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+
+												<div class="col-12">
+
+													<div class="form-group has-icon-left">
+														<label for="email-id-icon">Email</label>
+														<div class="position-relative">
+															<input type="email" class="form-control"
+																placeholder="Email" id="correo">
+															<div class="form-control-icon">
+																<i class="bi bi-envelope"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="form-group has-icon-left">
+														<label for="mobile-id-icon">Telefono</label>
+														<div class="position-relative">
+															<input type="tel" class="form-control"
+																placeholder="Tu telefono" id="telefono">
+															<div class="form-control-icon">
+																<i class="bi bi-phone"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="form-group has-icon-left">
+														<label for="password-id-icon">Password</label>
+														<div class="position-relative">
+															<input type="password" class="form-control"
+																placeholder="Password" id="password">
+															<div class="form-control-icon">
+																<i class="bi bi-lock"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class='form-check'>
+														<div class="checkbox mt-2">
+															<input type="checkbox" id="status"
+																class='form-check-input' checked> <label
+																for="remember-me-v">Status</label>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 d-flex justify-content-end">
+													<button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+													<button type="reset"
+														class="btn btn-light-secondary me-1 mb-1">Reset</button>
+												</div>
+											</div>
+										</div>
+									</form>
 								</div>
 							</div>
 						</div>
 					</div>
-				</form>
+				</section>
 			</main>
 		</div>
 	</div>

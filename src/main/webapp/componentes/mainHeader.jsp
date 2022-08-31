@@ -1,5 +1,6 @@
 <header
-	class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+	class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
+	style="height: auto;">
 	<img src="<%=request.getContextPath()%>/images/login.png" width="30"
 		height="30" class="rounded" alt="..."> <a
 		class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">${param.usuarioCorreo}</a>

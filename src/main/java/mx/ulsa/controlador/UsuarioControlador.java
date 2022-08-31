@@ -65,7 +65,7 @@ public class UsuarioControlador extends HttpServlet {
 				this.registrarUsuarioPersona(request, response);
 				break;
 			case "registrarUsuarioTarea":
-				this.registrarUsuarioPersona(request, response);
+				this.registarUsuarioTarea(request, response);
 				break;
 			default:
 				break;
@@ -85,7 +85,7 @@ public class UsuarioControlador extends HttpServlet {
 		String mensaje = "Ayuda";
 		request.setAttribute("mensaje", mensaje);
 
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/usuario/confirmacion.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/usuario/usuarioTarea.jsp");
 		dispatcher.forward(request, response);
 	}
 
@@ -108,7 +108,7 @@ public class UsuarioControlador extends HttpServlet {
 		String mensaje = "Ayuda";
 		request.setAttribute("mensaje", mensaje);
 
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/usuario/usuarioTarea.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/usuario/usuario.jsp");
 		dispatcher.forward(request, response);
 
 //		request.getRequestDispatcher("/usuario/usuario.jsp").forward(request, response);
