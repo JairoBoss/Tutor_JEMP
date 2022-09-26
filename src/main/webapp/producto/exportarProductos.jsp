@@ -11,6 +11,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<%@ page errorPage="../PaginaError.jsp"%>
 	<%
 	List<Producto> productos = (ArrayList) request.getAttribute("listaProductos");
 	response.setContentType("application/vnd.ms-excel");

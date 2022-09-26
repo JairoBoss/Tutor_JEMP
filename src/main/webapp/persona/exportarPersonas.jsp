@@ -11,8 +11,8 @@
 <title>Exportar personas</title>
 </head>
 <body>
+	<%@ page errorPage="../PaginaError.jsp"%>
 	<%
-
 	List<Persona> personas = (ArrayList) request.getAttribute("listaPersona");
 	response.setContentType("application/vnd.ms-excel");
 	response.setHeader("Content-disposition", "attachment; filename=reportePersonas.xls");

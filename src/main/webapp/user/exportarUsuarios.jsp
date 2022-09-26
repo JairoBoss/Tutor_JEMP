@@ -10,6 +10,8 @@
 <title>Usuarios</title>
 </head>
 <body>
+	<%@ page errorPage="../PaginaError.jsp"%>
+
 	<%
 	List<Usuario> usuarios = (ArrayList) request.getAttribute("listaUsuarios");
 	response.setContentType("application/vnd.ms-excel");

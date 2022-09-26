@@ -10,6 +10,7 @@
 <title>Exportar roles</title>
 </head>
 <body>
+	<%@ page errorPage="../PaginaError.jsp"%>
 	<%
 	List<Rol> listaRoles = (ArrayList) request.getAttribute("listaRoles");
 	response.setContentType("application/vnd.ms-excel");
