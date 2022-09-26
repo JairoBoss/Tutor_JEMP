@@ -41,7 +41,7 @@
 					<h1 class="h2">Registrar Persona</h1>
 				</div>
 				<form method="POST"
-					action="<%=request.getContextPath()%>/Usuario/registralRol">
+					action="<%=request.getContextPath()%>/Usuario/registrarUsuarioPersona">
 					<div class="row">
 						<div class="col-10">
 							<div class="mb-3 row">

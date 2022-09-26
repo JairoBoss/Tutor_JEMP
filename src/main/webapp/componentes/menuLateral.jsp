@@ -22,24 +22,24 @@
 
 			<li class="nav-item"><a
 				class="nav-link ${param.menuActivo == 'usuarioTarea' ? 'active' : ''}"
-				href="<%=request.getContextPath()%>/usuario/usuarioTarea.jsp"> <span
+				href="<%=request.getContextPath()%>/Usuario/usuarios"> <span
 					data-feather="shopping-cart" class="align-text-bottom"></span>
 					Usuario
 			</a></li>
 			<li class="nav-item"><a
 				class="nav-link ${param.menuActivo == 'rolTarea' ? 'active' : ''}"
-				href="<%=request.getContextPath()%>/usuario/rol.jsp"> <span
+				href="<%=request.getContextPath()%>/Rol/listarRoles"> <span
 					data-feather="users" class="align-text-bottom"></span> Rol
 			</a></li>
 			<li class="nav-item"><a
 				class="nav-link ${param.menuActivo == 'personaTarea' ? 'active' : ''}"
-				href="<%=request.getContextPath()%>/usuario/persona.jsp"> <span
+				href="<%=request.getContextPath()%>/Persona/listarPersonas"> <span
 					data-feather="bar-chart-2" class="align-text-bottom"></span>
 					Persona
 			</a></li>
 			<li class="nav-item"><a
 				class="nav-link ${param.menuActivo == 'productoTarea' ? 'active' : ''}"
-				href="<%=request.getContextPath()%>/usuario/producto.jsp"> <span
+				href="<%=request.getContextPath()%>/Producto/listarPersonas"> <span
 					data-feather="layers" class="align-text-bottom"></span> Producto
 			</a></li>
 		</ul>

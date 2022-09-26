@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * Servlet implementation class EjeCookieServlet
+ * Servlet implementation class EjeCookiesServlet
  */
 public class EjeCookiesServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;

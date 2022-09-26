@@ -1,24 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="5.0">
-  <servlet>
-    <description></description>
-    <display-name>EjeCookieServlet</display-name>
-    <servlet-name>EjeCookieServlet</servlet-name>
-    <servlet-class>mx.ulsa.controlador.EjeCookieServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>EjeCookieServlet</servlet-name>
-    <url-pattern>/EjeCookieServlet</url-pattern>
-  </servlet-mapping>
-  <display-name>Tutor_Jairo</display-name>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <display-name>Tutor_JEMP</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
     <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
     <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>LoginPrueba</display-name>
+    <servlet-name>LoginPrueba</servlet-name>
+    <servlet-class>mx.ulsa.prueba.LoginPrueba</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginPrueba</servlet-name>
+    <url-pattern>/LoginPrueba</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EjeCookiesServlet</display-name>
+    <servlet-name>EjeCookiesServlet</servlet-name>
+    <servlet-class>mx.ulsa.controlador.EjeCookiesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EjeCookiesServlet</servlet-name>
+    <url-pattern>/EjeCookiesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RolControlador</display-name>
+    <servlet-name>RolControlador</servlet-name>
+    <servlet-class>mx.ulsa.controlador.RolControlador</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RolControlador</servlet-name>
+    <url-pattern>/Rol/*</url-pattern>
+  </servlet-mapping>
   <servlet>
     <description></description>
     <display-name>UsuarioControlador</display-name>
@@ -28,5 +48,25 @@
   <servlet-mapping>
     <servlet-name>UsuarioControlador</servlet-name>
     <url-pattern>/Usuario/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PersonaControlador</display-name>
+    <servlet-name>PersonaControlador</servlet-name>
+    <servlet-class>mx.ulsa.controlador.PersonaControlador</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PersonaControlador</servlet-name>
+    <url-pattern>/Persona/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ProductoControlador</display-name>
+    <servlet-name>ProductoControlador</servlet-name>
+    <servlet-class>mx.ulsa.controlador.ProductoControlador</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductoControlador</servlet-name>
+    <url-pattern>/Producto/*</url-pattern>
   </servlet-mapping>
 </web-app>
